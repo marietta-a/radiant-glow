@@ -1,11 +1,23 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:radiantglow/helpers/form_builder.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key, this.currentUser});
+  final User? currentUser;
+  
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen>{
 
   @override
   Widget build(BuildContext context) {
+
+  final formKey = GlobalKey<FormState>();
+
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -50,6 +62,7 @@ class HomeScreen extends StatelessWidget {
               'Welcome!',
               style: Theme.of(context).textTheme.displaySmall,
             ),
+            FormBuilder(key: formKey),
             const SignOutButton(),
           ],
         ),
