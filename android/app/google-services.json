@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "225763115404",
+    "project_id": "radiantglow-56323",
+    "storage_bucket": "radiantglow-56323.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225763115404:android:c07e7e5dc639bfe30716a9",
+        "android_client_info": {
+          "package_name": "com.example.radiantglow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmDup6GzMCkCxZ5kszU6C-FWtwmczCa20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
